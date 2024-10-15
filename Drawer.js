@@ -24,7 +24,11 @@ export default class Drawer extends Component {
             nip: this.props.route.params.nip,
           }}
         />
-        <Drawer.Screen name="Datos" component={Datos} />
+        <Drawer.Screen name="Datos" component={Datos} 
+        initialParams={{
+          codigo: this.props.route.params.codigo,
+          nip: this.props.route.params.nip,
+        }}/>
       </Drawer.Navigator>
     );
   }

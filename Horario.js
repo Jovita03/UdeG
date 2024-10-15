@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#f2f2f2",
+    backgroundColor: "#ffe6f0", // Fondo rosa muy clarito
   },
   title: {
     fontSize: 36,
@@ -77,18 +76,24 @@ const styles = StyleSheet.create({
     color: "#333",
     marginBottom: 20,
     textAlign: 'center',
+    backgroundColor: "#e6d4f0", // Barra de título morada muy clarita
+    padding: 10,
+    borderRadius: 10,
   },
   subtitle: {
     fontSize: 20,
     color: "#555",
     marginBottom: 20,
     textAlign: 'center',
+    backgroundColor: "#e6d4f0", // Barra de subtítulo morada muy clarita
+    padding: 10,
+    borderRadius: 10,
   },
   list: {
     paddingHorizontal: 10,
   },
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: "#ffccd5", // Fondo rosita un poco más fuerte para cada materia
     borderRadius: 10,
     padding: 15,
     marginVertical: 10,
@@ -96,7 +101,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
-    elevation: 5, // For Android shadow
+    elevation: 5, // Para sombras en Android
   },
   subject: {
     fontSize: 18,

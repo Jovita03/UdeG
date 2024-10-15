@@ -33,12 +33,13 @@ export default class Login extends Component {
       xhttp.send();
     };
     return (
+      
       <View>
         
         <View style={{alignItems:'center', marginTop:'5%'}}>
           <Image
           source={require('./Fotos/logo.png')}
-          style={{width: 220, height: 300}}
+          style={{width: 220, height: 310}}
           />
         </View>
         <View style={{alignItems:'center',  marginTop:'10%'}}>
@@ -51,7 +52,8 @@ export default class Login extends Component {
           }}>
           <TextInput
             style={{color:'black'}}
-            placeholder="Codigo"
+            placeholder=" Ingresa Código"
+            placeholderTextColor="black"
             onChangeText={codigo => this.setState({codigo})}
           />
           </View>
@@ -67,7 +69,8 @@ export default class Login extends Component {
             }}>
             <TextInput
               style={{color:'black'}}
-              placeholder="nip"
+              placeholder="Ingresa Nip"
+              placeholderTextColor="black"
               onChangeText={nip => this.setState({nip})}
               secureTextEntry={true}
             />
@@ -82,8 +85,9 @@ export default class Login extends Component {
               borderColor: 'black',
               width: '45%',
               marginTop:'5%'
+              
             }}>
-            <Button title="entrar" onPress={login} />
+            <Button title="entrar" onPress={login} color="purple" />
           </View>
         </View>
         
